@@ -1,0 +1,25 @@
+{
+ "type": "object"  ,
+ "required" : ["posts"],
+ "posts" : {
+     "type":"array",
+     "required" : [
+         "author",
+         "authorId",
+         "id",
+         "likes",
+         "popularity",
+         "reads",
+         "tags"
+     ],
+     "properties" : {
+       "author": { "type": "string" },
+       "authorId": { "type": "integer" },
+       "id": { "type": "integer" },
+       "likes": { "type": "integer" },
+       "popularity": { "type": "float" },
+       "reads": { "type": "float" },
+       "tags": { "type": "array" }
+     }
+ }
+}
